@@ -1,0 +1,55 @@
+# Group: 18
+# Names: Santiago Perez A, Justin Kardach, Kyle T, Lou C
+# Date: 4/10/17
+# ===============================================
+# Scripts that show functionality of the database.
+
+
+
+#Changes the phone number for the restaurant Qdoba
+UPDATE Contact
+	SET PhoneNumber = 4075433345
+	WHERE RestaurantName = 'Qdoba';
+
+
+#Fetches the restaurant name and average price for an American food restaurants from high avg to low
+SELECT RestaurantName,AVGPrice 
+	FROM Food 
+	WHERE FoodCategory = 'American'
+	ORDER BY AVGPrice Desc;
+
+#Fetches the restaurant name and food category for all casual dining restaurants that do not require you to tip.
+SELECT RestaurantName, FoodCategory 
+	FROM Food, CD_Sub 
+	WHERE CD_Sub.CD_RName = Food.RestaurantName 
+	AND hasTip = 0;
+
+#Order all casual dining restaurants from high to low rating.
+SELECT RestaurantName, Rating 
+	FROM Restaurant, ServiceType
+	WHERE ServiceType.RestaurantName = Restaurant.Name 
+	ORDER BY Rating DESC;
+
+# Makes sure all foods have a price range
+UPDATE Food
+	SET AVGPrice = 1
+	WHERE AVGPrice = 0;
+
+# Gets the address of all restaurants with a drive thru
+SELECT Contact.RestaurantName, Contact.Address
+	FROM Contact, FF_Sub
+	WHERE Contact.RestaurantName = FF_Sub.FF_RName
+	AND FF_Sub.hasDriveThru = 1;
+
+# Gets the phone numbers of all restaurants that provide take out/delivery service
+SELECT Contact.RestaurantName, Contact.PhoneNumber
+	FROM Contact, ServiceType
+	WHERE Contact.RestaurantName = ServiceType.RestaurantName
+	AND ServiceType.Type = 'TD';
+
+# Gets all the restaurants and their respective websites that have food under a price rating of 3
+SELECT Name, Website
+	FROM Restaurant
+	WHERE Name IN (SELECT RestaurantName
+	FROM Food
+	WHERE AVGPrice < 3);

@@ -1,0 +1,130 @@
+# Group: 18
+# Names: Santiago Perez A, Justin Kardach, Kyle T, Lou C
+# Date: 4/4/17
+# ===============================================
+# Populates the tables in the database
+
+
+
+# Populates the restaurant table.
+INSERT INTO Restaurant VALUES('Qdoba', '10AM-9PM', 4, 'qdoba.com');
+INSERT INTO Restaurant VALUES('Chick-fil-a', '730AM-8pm', 4, 'chick-fil-a.com');
+INSERT INTO Restaurant VALUES('Dominos Pizza', '10AM-10PM', 3, 'dominos.com');
+INSERT INTO Restaurant VALUES('Dunkin Donuts', '7AM-12AM', 5, 'dunkindonuts.com');
+INSERT INTO Restaurant VALUES('Burger U', '11AM-11PM', 5, 'burgeruucf.com');
+INSERT INTO Restaurant VALUES('Moms Spaghetti', '9AM-5PM', 3, 'spaghetti.com');
+INSERT INTO Restaurant VALUES('McWendys', '8AM-7PM', 4, 'mcwendys.com');
+INSERT INTO Restaurant VALUES('Burger Queen', '8AM-2AM', 2, 'burgerqueen.com');
+INSERT INTO Restaurant VALUES('Taco City', '7AM-3AM', 1, 'tacocity.com');
+INSERT INTO Restaurant VALUES('Tijuana Fats', '10AM-11PM', 3, 'tfats.com');
+INSERT INTO Restaurant VALUES('Pizza Bell', '8AM-5AM', 2, 'pizzabell.com');
+INSERT INTO Restaurant VALUES('Bwekfast', '330AM-420AM', 3, 'bwekfast.com');
+INSERT INTO Restaurant VALUES('Launch', '1030AM-5PM', 4, 'launch.com');
+INSERT INTO Restaurant VALUES('Danner', '530PM-1AM', 5, 'danner.com');
+INSERT INTO Restaurant VALUES('Jebaited', '11AM-11PM', 4, 'jebaited.com');
+INSERT INTO Restaurant VALUES('RIP in Pepperonis', '10AM-1AM', 5, 'ripinpepperonies.com');
+INSERT INTO Restaurant VALUES('iDennys', '7AM-5PM', 2, 'idennys.com');
+INSERT INTO Restaurant VALUES('Subhue', '8AM-10PM', 5, 'huehuehue.com');
+INSERT INTO Restaurant VALUES('Wendalds', '7AM-7PM', 3, 'wendalds.com');
+INSERT INTO Restaurant VALUES('Elvas', '1230PM-120pm', 5, 'elvas.edu');
+
+
+# Populates the ServiceType table.
+INSERT INTO ServiceType VALUES('Qdoba', 'FF');
+INSERT INTO ServiceType VALUES('Chick-fil-a', 'FF');
+INSERT INTO ServiceType VALUES('Dominos Pizza', 'TD');
+INSERT INTO ServiceType VALUES('Dunkin Donuts', 'FF');
+INSERT INTO ServiceType VALUES('Burger U', 'CD');
+INSERT INTO ServiceType VALUES('Moms Spaghetti', 'CD');
+INSERT INTO ServiceType VALUES('McWendys', 'FF');
+INSERT INTO ServiceType VALUES('Burger Queen', 'FF');
+INSERT INTO ServiceType VALUES('Taco City', 'TD');
+INSERT INTO ServiceType VALUES('Tijuana Fats', 'CD');
+INSERT INTO ServiceType VALUES('Pizza Bell', 'TD');
+INSERT INTO ServiceType VALUES('Bwekfast', 'CD');
+INSERT INTO ServiceType VALUES('Launch', 'CD');
+INSERT INTO ServiceType VALUES('Danner', 'FD');
+INSERT INTO ServiceType VALUES('Jebaited', 'FD');
+INSERT INTO ServiceType VALUES('RIP in Pepperonis', 'TD');
+INSERT INTO ServiceType VALUES('iDennys', 'CD');
+INSERT INTO ServiceType VALUES('Subhue', 'CD');
+INSERT INTO ServiceType VALUES('Wendalds', 'FF');
+INSERT INTO ServiceType VALUES('Elvas', 'FD');
+
+
+# Populates the Contact table.
+INSERT INTO Contact VALUES('Qdoba', 'CD12715 Pegasus Dr', 4072753820);
+INSERT INTO Contact VALUES('Chick-fil-a','4000 Central Florida Blvd', 4078232238);
+INSERT INTO Contact VALUES('Dominos Pizza','4000 Central Florida Blvd', 4078232238);
+INSERT INTO Contact VALUES('Dunkin Donuts','4210 W Plaza Dr', 4078823688);
+INSERT INTO Contact VALUES('Burger U','4233 E Plaza Dr', 4078820450);
+INSERT INTO Contact VALUES('Moms Spaghetti', '8 Mile Rd', 4071234567);
+INSERT INTO Contact VALUES('McWendys', '1 Yellow Brick Rd', 4073219654);
+INSERT INTO Contact VALUES('Burger Queen', '123 Fake St', 4074543678);
+INSERT INTO Contact VALUES('Taco City', '537 Candyland Way', 4074516782);
+INSERT INTO Contact VALUES('Tijuana Fats', '42 Wallaby Way', 4074516543);
+INSERT INTO Contact VALUES('Pizza Bell', '000 Circle Cr', 4074560000);
+INSERT INTO Contact VALUES('Bwekfast', '12 Waffles Dr', 4079871235);
+INSERT INTO Contact VALUES('Launch', '400 Sandwich Way', 4075679823);
+INSERT INTO Contact VALUES('Danner', '300 Pasta Dr', 4075679823);
+INSERT INTO Contact VALUES('Jebaited', '1 Central Florida Blvd', 4076787890);
+INSERT INTO Contact VALUES('RIP in Pepperonis', '123 Orange Ave', 4079089089);
+INSERT INTO Contact VALUES('iDennys', '657 Yellow St', 4076909143);
+INSERT INTO Contact VALUES('Subhue', '432 Pepperoni Dr', 4074562345);
+INSERT INTO Contact VALUES('Wendalds', '678 Burger St', 4076091832);
+INSERT INTO Contact VALUES('Elvas', '125 HEC', 4071233456);
+
+
+# Populates the Food table.
+INSERT INTO Food VALUES('Qdoba', 'Latin', 2);
+INSERT INTO Food VALUES('Chick-fil-a', 'Asian', 1);
+INSERT INTO Food VALUES('Dominos Pizza', 'Fusion', 1);
+INSERT INTO Food VALUES('Dunkin Donuts', 'Antarctican', 1);
+INSERT INTO Food VALUES('Burger U', 'European', 2);
+INSERT INTO Food VALUES('Moms Spaghetti', 'Antarctican', 3);
+INSERT INTO Food VALUES('McWendys', 'Fusion', 0);
+INSERT INTO Food VALUES('Burger Queen', 'Fusion', 3);
+INSERT INTO Food VALUES('Taco City', 'African', 2);
+INSERT INTO Food VALUES('Tijuana Fats', 'American', 3);
+INSERT INTO Food VALUES('Pizza Bell', 'Other', 2);
+INSERT INTO Food VALUES('Bwekfast', 'American', 1);
+INSERT INTO Food VALUES('Launch', 'European', 3);
+INSERT INTO Food VALUES('Danner', 'Asian', 2);
+INSERT INTO Food VALUES('Jebaited', 'Fusion', 1);
+INSERT INTO Food VALUES('RIP in Pepperonis', 'Other', 3);
+INSERT INTO Food VALUES('iDennys', 'American',4);
+INSERT INTO Food VALUES('Subhue', 'Fusion', 1);
+INSERT INTO Food VALUES('Wendalds', 'Other', 2);
+INSERT INTO Food VALUES('Elvas', 'Other', 5);
+
+
+# Populates the FF_Sub table.
+INSERT INTO FF_Sub VALUES('Qdoba', 0);
+INSERT INTO FF_Sub VALUES ('Chick-fil-a', 0);
+INSERT INTO FF_Sub VALUES('Dunkin Donuts', 0);
+INSERT INTO FF_Sub VALUES ('McWendys', 1);
+INSERT INTO FF_Sub VALUES('Burger Queen', 1);
+INSERT INTO FF_Sub VALUES('Wendalds', 0);
+
+
+# Populates the CD_Sub table.
+INSERT INTO CD_Sub VALUES('Burger U', 1, 0);
+INSERT INTO CD_Sub VALUES('Moms Spaghetti' , 0, 1);
+INSERT INTO CD_Sub VALUES('Tijuana Fats', 1, 0);
+INSERT INTO CD_Sub VALUES('Bwekfast', 0, 1);
+INSERT INTO CD_Sub VALUES('Launch', 0, 1);
+INSERT INTO CD_Sub VALUES('iDennys', 1, 0);
+INSERT INTO CD_Sub VALUES('Subhue', 1, 1);
+
+
+# Populates the FD_Sub table.
+INSERT INTO FD_Sub VALUES('Danner', 1, 1);
+INSERT INTO FD_Sub VALUES('Jebaited', 1, 1);
+INSERT INTO FD_Sub VALUES('Elvas', 1, 1);
+
+
+# Populates the TD_Sub table.
+INSERT INTO TD_Sub VALUES('Dominos Pizza', 'Internet', 1);
+INSERT INTO TD_Sub VALUES('Taco City', 'Phone', 1);
+INSERT INTO TD_Sub VALUES('Pizza Bell', 'Delivery', 1);
+INSERT INTO TD_Sub VALUES('RIP in Pepperonis', 'Take Out', 0);
